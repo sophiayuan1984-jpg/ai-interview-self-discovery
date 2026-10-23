@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # ai-interview-self-discovery —— 一键安装 / 更新（同一条命令，重复执行即更新）
 #
-#   安装 / 更新：curl -fsSL https://raw.githubusercontent.com/__REPO__/main/install.sh | bash
-#   卸载：      curl -fsSL https://raw.githubusercontent.com/__REPO__/main/install.sh | bash -s -- --uninstall
+#   安装 / 更新：curl -fsSL https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.sh | bash
+#   卸载：      curl -fsSL https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.sh | bash -s -- --uninstall
 #
 # 可选环境变量：
 #   SKILL_REPO=owner/repo     从哪个 GitHub 仓库安装（默认见下方 REPO）
@@ -11,7 +11,7 @@
 set -euo pipefail
 
 NAME="ai-interview-self-discovery"
-REPO="${SKILL_REPO:-__REPO__}"
+REPO="${SKILL_REPO:-sophiayuan1984-jpg/ai-interview-self-discovery}"
 BRANCH="${SKILL_BRANCH:-main}"
 ITEMS=(SKILL.md README.md VERSION LICENSE references tests)
 

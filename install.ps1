@@ -1,13 +1,13 @@
 # ai-interview-self-discovery —— Windows 一键安装 / 更新（PowerShell，重复执行即更新）
 #
-#   安装 / 更新：irm https://raw.githubusercontent.com/__REPO__/main/install.ps1 | iex
-#   卸载：      $env:SKILL_UNINSTALL=1; irm https://raw.githubusercontent.com/__REPO__/main/install.ps1 | iex
+#   安装 / 更新：irm https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.ps1 | iex
+#   卸载：      $env:SKILL_UNINSTALL=1; irm https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.ps1 | iex
 #
 # 可选环境变量：SKILL_REPO / SKILL_BRANCH / SKILL_DIR（含义同 install.sh）
 $ErrorActionPreference = 'Stop'
 
 $Name   = 'ai-interview-self-discovery'
-$Repo   = if ($env:SKILL_REPO)   { $env:SKILL_REPO }   else { '__REPO__' }
+$Repo   = if ($env:SKILL_REPO)   { $env:SKILL_REPO }   else { 'sophiayuan1984-jpg/ai-interview-self-discovery' }
 $Branch = if ($env:SKILL_BRANCH) { $env:SKILL_BRANCH } else { 'main' }
 $Items  = @('SKILL.md', 'README.md', 'VERSION', 'LICENSE', 'references', 'tests')
 

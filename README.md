@@ -22,18 +22,18 @@
 macOS / Linux：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/__REPO__/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.sh | bash
 ```
 
 Windows（PowerShell）：
 
 ```powershell
-irm https://raw.githubusercontent.com/__REPO__/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.ps1 | iex
 ```
 
 或者直接对你的 AI 助手说一句：
 
-> 帮我安装这个 skill：https://github.com/__REPO__
+> 帮我安装这个 skill：https://github.com/sophiayuan1984-jpg/ai-interview-self-discovery
 
 脚本会自动检测本机已有的 Agent（WorkBuddy / CodeBuddy / Claude Code / Codex / Cursor），装到各自的 `skills/` 目录，并显示 `已安装 v1.0.0` 或 `已更新 v1.0.0 → v1.1.0`。
 
@@ -42,10 +42,10 @@ irm https://raw.githubusercontent.com/__REPO__/main/install.ps1 | iex
 
 ```bash
 # 只装到指定目录
-curl -fsSL https://raw.githubusercontent.com/__REPO__/main/install.sh | SKILL_DIR=~/.claude/skills bash
+curl -fsSL https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.sh | SKILL_DIR=~/.claude/skills bash
 
 # 卸载
-curl -fsSL https://raw.githubusercontent.com/__REPO__/main/install.sh | bash -s -- --uninstall
+curl -fsSL https://raw.githubusercontent.com/sophiayuan1984-jpg/ai-interview-self-discovery/main/install.sh | bash -s -- --uninstall
 
 # 从本地仓库安装（开发调试用）
 bash install.sh
